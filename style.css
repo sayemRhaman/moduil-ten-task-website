@@ -154,6 +154,37 @@ main{
     font-size: 16px;
     font-weight: 500;
 }
+/*-------------features-----------------*/
+
+
+.feature{
+    margin-top:80px;
+    padding:20px 165px;
+}
+.features{
+   display: flex;
+   justify-content: space-between;
+   gap:10%;
+}
+.features-text h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color:#18191F;
+}
+.features-text{
+    width: 50%;
+}
+
+.features-img{
+    width: 40%;
+}
+.features-img img{
+    width: 100%;
+}
+
+
+
+
 
 
 
