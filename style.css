@@ -85,12 +85,13 @@ nav li{
 
 /*------------------main-----------------*/
 main{
-    padding:20px 165px;
+   
 }
 
 /*-------------------advertaj section-------------------*/
  .advertaj{
-       margin:50px auto;
+       padding:20px 165px;
+       margin-top:50px;
  }
  .advertaj-container{
     background-color: #faf7f3;
@@ -103,7 +104,8 @@ main{
 
 /*--------------------card-section------------------*/
 .card-container{
-    margin:80px auto;
+    margin-top:80px;
+    padding:20px 165px;
 }
 .card-title{
     text-align: center;
@@ -119,7 +121,6 @@ main{
 }
 .card-contant{
     display: flex;
-    flex-grow: 1;
     justify-content: space-between;
 }
 .card img{
@@ -144,7 +145,15 @@ main{
     display: inline-block;
 }
 
-
+.see-more{
+    text-align: end;
+}
+.see-more a{
+    text-decoration: none;
+    color:#E02C6D;
+    font-size: 16px;
+    font-weight: 500;
+}
 
 
 
@@ -158,7 +167,8 @@ main{
  /*-----------------------responsive-----------*/
   
  @media screen and (max-width:576px) {
-    header, main,
+    header,
+    .advertaj,
     .card-container{
         padding: 50px 40px;
     }
@@ -175,8 +185,8 @@ main{
    }
    .banner-text-bar,
    .banner-img,
-   .banner-img img
-   {
+   .banner-img img,
+   .card{
     width: 100%;
   }
   .advertaj-container{
@@ -188,7 +198,8 @@ main{
 
 
  @media screen and (min-width:576px) and (max-width:992px) {
-    header, main{
+    header,.advertaj,
+    .card-container{
         padding: 50px 150px;
     }
     nav, nav ul,
