@@ -182,6 +182,51 @@ main{
     width: 100%;
 }
 
+/*------------footer------------*/
+footer{
+  background-color:#0A0826 ;
+  color:#faf7f3;
+}
+.footer-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+}
+.footer-con h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.footer-con p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.social-icon{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+.social-icon i{
+    margin-right: 1.4rem;
+    border: 1px solid #E02C6D;
+    padding: 10px;
+    transition: all 0.8s;
+}
+.social-icon .fa-facebook:hover{
+   background-color:#3b5998 ;
+}
+.social-icon .fa-twitter:hover{
+    background-color: #1DA1F2 ;
+}
+.social-icon .fa-dribbble:hover{
+   background-color:#444444;
+}
+.social-icon .fa-youtube:hover{
+    background-color: #CD201F;
+}
+
+
 
 
 
@@ -200,13 +245,18 @@ main{
  @media screen and (max-width:576px) {
     header,
     .advertaj,
-    .card-container{
+    .card-container,
+    .feature{
         padding: 50px 40px;
     }
     nav, nav ul,
     .banner-container,
-    .card-contant{
+    .card-contant,
+    .features{
     flex-direction: column;
+   }
+   .features{
+    flex-direction: column-reverse;
    }
    nav{
      text-align: center;
@@ -217,29 +267,43 @@ main{
    .banner-text-bar,
    .banner-img,
    .banner-img img,
-   .card{
+   .card,
+   .features-text,
+   .features-img{
     width: 100%;
   }
   .advertaj-container{
     flex-wrap: wrap;
     gap:20px;
      }
+
+    .features-text{
+        text-align: center;
+        margin-bottom: 40px;
+    }
   
  }
 
 
  @media screen and (min-width:576px) and (max-width:992px) {
     header,.advertaj,
-    .card-container{
+    .card-container,
+    .feature{
         padding: 50px 150px;
     }
     nav, nav ul,
-    .banner-container{
+    .banner-container,
+    .features{
     flex-direction: column;
+   }
+   .features{
+    flex-direction: column-reverse;
    }
    .banner-text-bar,
    .banner-img,
-   .banner-img img
+   .banner-img img,
+   .features-text,
+   .features-img
    {
     width: 100%;
   }
@@ -250,4 +314,8 @@ main{
   .card-contant{
     flex-wrap: wrap;
   }
+  .features-text{
+    text-align: center;
+    margin-bottom: 40px;
+}
  }
