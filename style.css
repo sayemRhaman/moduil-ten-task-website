@@ -1,0 +1,126 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+/*------------shearing style--------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+:root{
+    --Praimery-color: #3A3A3A;
+}
+.title{
+    font-size: 24px;
+    color: var(--Praimery-color);
+    font-weight: 700;
+}
+/*---------------header-----------------*/
+
+header{
+    padding: 50px 120px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    gap:30px;
+}
+nav li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--Praimery-color);
+}
+
+/*----------------------banner-----------------*/
+
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    gap:100px
+}
+.banner-text-bar{
+  width: 50%;
+}
+.banner-img{
+    width: 50%;
+}
+
+.banner-text-bar h1{
+  font-size: 3rem;
+  color:var(--Praimery-color);
+  font-weight: 700;
+}
+.disc{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3A3A3A;
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+.btn{
+    border-radius: 41px;
+    background: #E02C6D;
+    color:#fff;
+    border: none;
+    padding: 10px 18px;
+}
+.banner-img{
+    background-image: url('images/Circle\ design.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*------------------main-----------------*/
+main{
+    padding:20px 165px;
+}
+
+/*-------------------advertaj section-------------------*/
+ .advertaj{
+       margin:50px auto;
+ }
+ .advertaj-container{
+    background-color: #faf7f3;
+    padding:20px 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+
+ /*-----------------------responsive-----------*/
+  
+ @media screen and (max-width:576px) {
+    header{
+        padding: 50px 40px;
+    }
+    nav, nav ul,
+    .banner-container{
+    flex-direction: column;
+   }
+   nav{
+     text-align: center;
+   }
+   .banner-container{
+    text-align: center;
+   }
+   .banner-text-bar,
+   .banner-img,
+   .banner-img img
+   {
+    width: 100%;
+  }
+  
+ }
