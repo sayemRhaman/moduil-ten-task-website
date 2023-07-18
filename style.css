@@ -53,6 +53,10 @@ nav li{
 }
 .banner-img{
     width: 50%;
+    background-image: url('images/Circle\ design.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .banner-text-bar h1{
@@ -74,11 +78,9 @@ nav li{
     border: none;
     padding: 10px 18px;
 }
-.banner-img{
-    background-image: url('images/Circle\ design.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.banner-img img{
+    width: 100%;
 }
 
 /*------------------main-----------------*/
